@@ -1,6 +1,6 @@
 # Awesome-Oracle-Network
 
-# Top Oracle Networks Ecosystem
+## Top Oracle Networks Ecosystem
 **Curated List of Production Networks & Open-Source GitHub Projects**
 *Focused on Blockchain Oracles, Price Feeds, Real-World Data, Decentralized Computation & Cross-Chain Data Delivery*
 **Last updated: August 2026**
