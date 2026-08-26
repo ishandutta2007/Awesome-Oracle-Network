@@ -14,7 +14,7 @@ This repository tracks notable **production oracle networks** and **open-source 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
@@ -22,35 +22,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 ## SaaS/Hosted Platforms
 *(Production oracle networks and managed services — many with open-source components)*
 
-- **[Chainlink](https://chain.link/)**  
-  The most widely adopted decentralized oracle network, providing price feeds, Data Streams, VRF, CCIP cross-chain messaging, Functions, Proof of Reserve, and a broad services stack securing a large share of DeFi TVS.
-
-- **[Pyth Network](https://pyth.network/)**  
-  High-frequency, first-party price oracle using a pull model. Strong for low-latency market data across many chains, including equities, FX, and crypto.
-
-- **[API3](https://api3.org/)**  
-  First-party oracle solution (Airnode + dAPIs) that lets API providers run their own oracle nodes, with focus on reducing middlemen and OEV (oracle extractable value) recapture.
-
-- **[RedStone](https://redstone.finance/)**  
-  Modular, gas-efficient oracle with push and pull delivery models, particularly strong for emerging assets (LSTs, LRTs, yield-bearing collateral) and flexible integration patterns.
-
-- **[Supra](https://supraoracles.com/)**  
-  Multi-chain oracle network focused on speed, security, and broad data coverage for DeFi and other on-chain applications.
-
-- **[UMA Optimistic Oracle](https://uma.xyz/)**  
-  Optimistic oracle designed for arbitrary and subjective data (prediction markets, insurance, custom claims) resolved via economic dispute mechanisms.
-
-- **[Band Protocol](https://bandprotocol.com/)**  
-  Cross-chain data oracle platform that aggregates real-world data and APIs for smart contracts, operating with its own chain and validator set.
-
-- **[DIA](https://www.diadata.org/)**  
-  Open-source oracle platform providing transparent, customizable price feeds and market data with on-chain and off-chain delivery options.
-
-- **[Tellor](https://tellor.io/)**  
-  Permissionless, transparent oracle protocol where reporters stake and compete to provide data, secured by crypto-economic incentives and disputes.
-
-- **[Witnet](https://witnet.io/)**  
-  Decentralized, permissionless oracle network with strong crypto-economic guarantees for bringing real-world data and events on-chain.
+| Platform | Description | Starting Pricing | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Chainlink](https://chain.link/)** | Decentralized oracle network providing price feeds, Data Streams, VRF, CCIP cross-chain messaging, Functions, and Proof of Reserve. | From ~$0.005–$0.20 per request (LINK token subscription for VRF/Functions) or gas-only for standard on-chain feeds; Data Streams from $500/month | Free forever reading of public sponsored price feeds (protocol-subsidized, user pays network gas only); 5 LINK/day testnet faucet allocation |
+| **[Pyth Network](https://pyth.network/)** | High-frequency, first-party price oracle using a pull model for low-latency market data across equities, FX, commodities, and crypto. | From ~$0.0001 per on-chain price update (target chain fee) / Dedicated Hermes node endpoints from $50/month | Free forever public Hermes API tier limited to 10 requests every 10 seconds per IP (90 req / 10s for TradingView endpoint); unlimited testnet usage |
+| **[API3](https://api3.org/)** | First-party oracle solution (Airnode + dAPIs) connecting data providers directly to smart contracts with OEV recapture. | From ~$299/feed/year for managed dAPIs or self-funded proxy gas (~$0.01–$0.05 per update) | Free forever open-source Airnode (self-hosted with 0 protocol fees); unlimited read access to sponsored public dAPIs & testnet feeds |
+| **[RedStone](https://redstone.finance/)** | Modular, gas-efficient oracle supporting Core (pull calldata injection), Classic (push cache), and X (front-running prevention) models. | From ~$0.001–$0.05 gas overhead per pull request (calldata injection); enterprise bespoke feeds from $500/month | Free forever for RedStone Core pull data packages via decentralized cache nodes / Showroom; unlimited access on testnets |
+| **[Supra](https://supraoracles.com/)** | Multi-chain decentralized oracle network and dVRF platform with cross-chain communication and fast finality. | From ~$0.01 per request (credits pegged in USDC via $SUPRA staking from 1,000 SUPRA minimum) | 6-month free trial via SNAP (Supra Network Activate Program) offering 100% subsidized oracle & dVRF calls for eligible projects; unlimited testnet faucet |
+| **[UMA Optimistic Oracle](https://uma.xyz/)** | Optimistic oracle for subjective and arbitrary data (prediction markets, insurance, custom claims) resolved via economic dispute mechanisms. | Minimum assertion bond / `finalFee` starting at ~0.0001 ETH (~$0.25–$1.00 in collateral) refunded upon finalization | Free forever to query resolved assertions; 100% bond refund for correct assertions without disputes + testnet faucet with unlimited test assertions |
+| **[Band Protocol](https://bandprotocol.com/)** | Cross-chain decentralized data oracle platform aggregating real-world data and APIs via BandChain validators. | From ~$0.005–$0.01 per query (paid in BAND tokens to validators for data fetching/relaying) | Free forever reading of Band Standard Dataset price feeds cached on supported chains; unlimited BandChain Laozi testnet queries |
+| **[DIA](https://www.diadata.org/)** | Multi-chain open-source oracle platform providing transparent, customizable price feeds and market data. | From ~$99/month for standalone REST API / $250/month for custom on-chain production feeds | Free forever evaluation REST API (limited to specific test asset endpoints for evaluation); free access to testnet oracles |
+| **[Tellor](https://tellor.io/)** | Permissionless, transparent oracle protocol where reporters stake TRB and compete to provide data on-demand. | From ~0.001 TRB (~$0.05) minimum tip per on-demand data request + transaction gas | Free forever reading of existing Enshrined Feeds (e.g., ETH/USD, BTC/USD) without tipping; unlimited reporter requests on testnets |
+| **[Witnet](https://witnet.io/)** | Decentralized, permissionless oracle network with strong crypto-economic guarantees for bringing real-world data and events on-chain. | From ~$0.005–$0.02 (1 WIT / bridge gas equivalent) per custom RAD (Retrieve-Attest-Deliver) request | Free forever reading of sponsored public price feeds via Witnet Price Feeds Router; unlimited testnet requests |
 
 ## Open-Source GitHub Projects
 - **[Chainlink core & node software](https://github.com/smartcontractkit/chainlink)**  
